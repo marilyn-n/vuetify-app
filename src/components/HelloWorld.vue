@@ -54,20 +54,36 @@
     </v-flex>
   </v-layout>
   </div>
+  <v-footer height="auto" class="grey darken-3">
+    <v-layout row wrap justify-center>
+      <v-btn
+        v-for="link in links"
+        :key="link"
+        color="white"
+        flat
+      >
+        {{ link }}
+      </v-btn>
+      <v-flex xs12 py-3 text-xs-center white--text>
+        &copy;2018 — <strong>Vuetify</strong>
+      </v-flex>
+    </v-layout>
+  </v-footer>
   </div>
 </template>
 
 <script>
 export default {
-    data: () => ({
-      name: 'HelloWorld',
-      cards: [
-        { title: 'Pre-fab homes', src: 'https://richmondbizsense.com/wp-content/uploads/2015/10/Parade-of-Homes-2.jpg', flex: 12 },
-        { title: 'Favorite road trips', src: 'http://babiestravellite.com/wp-content/uploads/2015/08/summer-road-trip.jpg', flex: 6 },
-        { title: 'Best airlines', src: 'https://skift.com/wp-content/uploads/2017/07/allegiant-airlines-.jpg', flex: 6 }
-      ]
-    })
-  };
+  data: () => ({
+    name: 'HelloWorld',
+    cards: [
+      { title: 'Pre-fab homes', src: 'https://richmondbizsense.com/wp-content/uploads/2015/10/Parade-of-Homes-2.jpg', flex: 12 },
+      { title: 'Favorite road trips', src: 'http://babiestravellite.com/wp-content/uploads/2015/08/summer-road-trip.jpg', flex: 6 },
+      { title: 'Best airlines', src: 'https://skift.com/wp-content/uploads/2017/07/allegiant-airlines-.jpg', flex: 6 },
+    ],
+    links: ['Home', 'About Us', 'Team', 'Services', 'Blog', 'Contact Us'],
+  }),
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
