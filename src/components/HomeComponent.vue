@@ -1,6 +1,5 @@
 <template>
 <div class="app-home">
-  <App-toolBar></App-toolBar>
    <div>
     <v-layout column class="main">
     <v-flex xs12 sm6 offset-sm3>
@@ -42,20 +41,13 @@
       </v-card>
     </v-flex>
   </v-layout>
-    <FooterComponent></FooterComponent>
   </div>
 </div>
 </template>
 
 <script>
-
-import FooterComponent from './FooterComponent';
-import AppToolBar from './AppToolBar';
-
 export default {
   components: {
-    AppToolBar,
-    FooterComponent,
   },
   data: () => ({
     cards: [

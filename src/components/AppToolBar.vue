@@ -4,11 +4,12 @@
     <v-toolbar-side-icon></v-toolbar-side-icon>
     <v-toolbar-title class="white--text">Vuetify</v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn flat>About</v-btn>
+    <div class="hidden-sm-and-down">
+      <router-link to="/login">
+          <v-btn flat>Login</v-btn>
+      </router-link>
       <v-btn flat>Contact</v-btn>
-      <v-btn flat>Login</v-btn>
-    </v-toolbar-items>
+    </div>
   </v-toolbar>
   </div>
 </template>

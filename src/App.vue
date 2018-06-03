@@ -1,12 +1,23 @@
 <template>
   <div id="app">
-    <router-view/>
+     <App-toolBar></App-toolBar>
+         <router-view/>
+     <FooterComponent></FooterComponent>
   </div>
 </template>
 
 <script>
+import AppToolBar from '@/components/AppToolBar';
+import FooterComponent from '@/components/FooterComponent';
+
 export default {
-  name: 'App',
+  components: {
+      AppToolBar,
+      FooterComponent,
+    },
+  data: () => ({
+    name: 'App',
+  }),
 };
 </script>
 
