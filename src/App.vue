@@ -12,9 +12,9 @@ import FooterComponent from '@/components/FooterComponent';
 
 export default {
   components: {
-      AppToolBar,
-      FooterComponent,
-    },
+    AppToolBar,
+    FooterComponent,
+  },
   data: () => ({
     name: 'App',
   }),
